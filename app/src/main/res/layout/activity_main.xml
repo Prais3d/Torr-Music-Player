@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/searchFilter"/>
+
+    <TextView
+        android:id="@+id/tracks"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchFilter"
+        android:text="Tracks"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mySongListView"
+        android:layout_below="@+id/tracks"
+        android:layout_marginTop="0dp">>
+
+
+    </ListView>
+
+</RelativeLayout>
